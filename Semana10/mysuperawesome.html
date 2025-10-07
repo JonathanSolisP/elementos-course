@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern Form</title>
+    <style>
+        body {
+            background: #f4f6fb;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-container h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-size: 1rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e0e3ea;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background: #f9fafc;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #4f8cff;
+            outline: none;
+            background: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-btn {
+            width: 100%;
+            padding: 0.9rem;
+            background: linear-gradient(90deg, #4f8cff 0%, #6ed6ff 100%);
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form-btn:hover {
+            background: linear-gradient(90deg, #357ae8 0%, #4f8cff 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="form-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
